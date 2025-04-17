@@ -1,0 +1,101 @@
+body {
+  font-family: "Noto Serif Bengali", serif;
+}
+/* Start home  */
+.home a {
+  color: white;
+}
+.home {
+  color: white;
+  background-image: url('/imgs/wallpaperflare.com_wallpaper.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* End home  */
+.about .img-holder img {
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 25px;
+}
+.box h2::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -55px ;
+  width: 50px ;
+  height: 2px ;
+  background-color: gray;
+}
+.box p::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0px ;
+  width: 100px ;
+  height: 2px ;
+  background-color: gray;
+}
+/*End about  */
+
+/* Start travels */
+.tarvels .content {
+  position: absolute ; 
+  bottom: 15px ;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.tarvels .img-holder {
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 10px 25px;
+}
+
+@media (min-width:1199px) {
+  .tarvels .img-holder:nth-child(1) {
+    transform: scale(.85);
+    z-index: 1;
+  }
+  .tarvels .img-holder:nth-child(2) {
+    transform: scale(.92);
+    z-index: 1;
+  }
+  .tarvels .img-holder:nth-child(3) {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  .tarvels .img-holder:nth-child(4) {
+    transform: scale(.92);
+    z-index: 1;
+  }
+  .tarvels .img-holder:nth-child(5) {
+    transform: scale(.85);
+    z-index: 1;
+  }
+}
+  
+.tarvels .img-holder img {
+  transition: .3s;
+}
+.tarvels .img-holder:hover img {
+  transform: scale(1.1) rotate(3deg);
+  cursor: pointer;
+}
+/* End travels */
+/* Start balon */
+.balon { 
+  background-image: url('/imgs/tours.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.balon .container{
+  z-index: 10;
+}
+.balon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+/* End balon */

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CAMPER </title>
+    <!-- font Awsome -->
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!-- this style for this web  -->
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-800">
+  <!-- Start home Page  -->
+  <div class="home relative">
+    <div class="navbar ">
+      <div class="container w-[90%] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <!-- Logo -->
+          <div class="flex-shrink-0 flex items-center">
+            <a href="#" class="text-[25px] font-bold text-gray-800 ">Camper</a>
+          </div>
+  
+          <!-- Links (Centered on large screens, hidden on small screens) -->
+          <div class="hidden md:flex md:items-center md:space-x-8">
+            <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2  text-md font-medium">Travel Map</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2  text-md font-medium">About Us</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 px-3 py-2  text-md font-medium">Blog</a>
+          </div>
+  
+          <!-- Account (Right) -->
+          <div class="hidden md:flex md:items-center">
+            <a href="#" class="flex items-center text-gray-600 hover:text-gray-900">
+              <i class="fas fa-user mr-4 text-[20px]"></i>
+              <span class="text-sm font-medium">Account</span>
+            </a>
+          </div>
+  
+          <!-- Hamburger Menu (Visible on small screens) -->
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+              <i class="fas fa-bars text-2xl cursor-pointer text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Mobile Menu (Hidden by default, toggled on small screens) -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#777777]">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#" class="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Travel Map</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About Us</a>
+          <a href="#" class="text-gray-600 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+          <a href="#" class="flex items-center text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">
+            <i class="fas fa-user mr-2 "></i>
+            <span>Account</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+      <h1 class="lg:text-[50px] text-[40px] font-[400] capitalize mb-4">
+        It's great time <br> to start <span class="font-[700]">living now</span>
+      </h1>
+      <button class="px-[40px] py-[10px] bg-[#ffe8] text-white  hover:bg-gray-700 cursor-pointer transition">
+        Know More
+      </button>
+    </div>
+  </div>
+  <!-- End home Page  -->
+  <!-- Starat about section  -->
+  <div class="about py-[50px] text-white relative ">
+    <div class="w-[80%] m-auto lg:ms-auto lg:mr-0 grid lg:grid-cols-2 items-center gap-15">
+      <div class="box">
+        <h2 class="uppercase text-xl relative ms-[55px]">about</h2>
+        <h1 class="text-xl lg:text-3xl font-bold my-4">BECOME PART OF <br>
+          TWO-WEEK CANADA WESTERN CONQUEST</h1>
+        <p class="text-sm  text-[#777] relative">FASCINATING LANDSCAPES, NATIONAL PARKS WITH THOUSANDS OF THOUSAND-YEAR-OLD TREES UP TO THE SKY, AN INDIAN VILLAGE WITH MORE THAN 80 TOTEM AND S CLIMB THE MOUNTAINS.</p>
+      </div>
+      <div class="img-holder">
+        <img src="/imgs/about.jpg" decoding="async" class="w-full h-full max-w-full lg:rounded-tl-[220px] lg:rounded-bl-[220px]" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- End about section  -->
+  <!-- Starat Explore section  -->
+  <div class="Explore about py-[100px] text-white relative ">
+    <div class="w-[80%] m-auto lg:me-auto lg:ml-0 grid lg:grid-cols-2 items-center gap-15">
+      <div class="img-holder">
+        <img src="/imgs/travel.jpg" decoding="async" class="w-full h-full max-w-full lg:rounded-tr-[220px] lg:rounded-br-[220px]" alt="">
+      </div>
+
+      <div class="box">
+        <h2 class="uppercase text-xl relative ms-[55px] ">TRAVEL MAP</h2>
+        <h1 class="text-xl lg:text-3xl font-bold my-4">EXPLORE & ENJOY</h1>
+        <p class="text-sm  text-[#777] relative">From Vancouver to Calgary, 2 provinces, 7 cities, 8 stops 2017 km. Visit the highest peak of the Canadian Rocky Mountains, enjoy the beauty Sanwapta Falls and Peyto Lake, meet the residents of Banff, a small mountain town at the elevation of 1380 meters</p>
+      </div>
+      
+    </div>
+  </div>
+  <!-- End Explore section  -->
+  <!-- Start transport -->
+  <div class=" transport about py-[50px] text-white relative ">
+    <div class="w-[80%] m-auto lg:ms-auto lg:mr-0 grid lg:grid-cols-2 items-center gap-15">
+      <div class="box">
+        <h2 class="uppercase text-xl relative ms-[55px]">TRANSPORT</h2>
+        <h1 class="text-xl lg:text-3xl font-bold my-4">How to Move Around?</h1>
+        <p class="text-sm  text-[#777] relative">The CAMPER provides you with comfortable vans with all the amenities inside.
+          At your disposal: consumer electronics, bathroom, TV, two beds, air conditioning, mini fridge, sink and stove, solar-powered electricity.</p>
+      </div>
+      <div class="img-holder">
+        <img src="/imgs/transport.jpg" decoding="async" class="w-full h-full max-w-full lg:rounded-tl-[220px] lg:rounded-bl-[220px]" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- End transport -->
+  <!-- Start transport -->
+  <div class=" transport about py-[50px] text-white relative ">
+    <div class="w-[80%] mx-auto  grid lg:grid-cols-2 gap-15 items-center">
+      <div class="content">
+        <h1 class="capitalize text-[40px] mb-4">let's Explore <br> the world together </h1>
+        <button class="px-[40px] w-full py-[10px] bg-[#ffe8] text-white  hover:bg-gray-700 cursor-pointer transition">
+          Know More
+        </button>
+      </div>
+      <div class="box-content text-[#777]">
+        <p>CAMPER IS AN ONLINE ROAD TRIP PLANNER ON WHICH YOU CAN ORGANIZE YOUR 100% TAILOR-MADE TRIP TO CANADA.
+          Our website is the only existing platform where it is possible to truly plan your entire road trip online, by choosing your destinations and your accommodation, while having the possibility of adding optional activities and a rental vehicle.</p>
+      </div>
+    </div>
+  </div>
+  <!-- End transport -->
+  <!-- Start travels  -->
+  <div class="tarvels py-[100px] grid lg:grid-cols-5  md:grid-cols-3 lg:gap-2  gap-10">
+    <div class="img-holder relative">
+      <img src="/imgs/1.jpg" decoding="async" class="w-full h-full object-cover max-w-full" alt="" loading="lazy">
+      <h1 class="content text-[20px] text-white">pasific rim</h1>
+    </div>
+    <div class="img-holder relative">
+      <img src="/imgs/2.jpg" decoding="async" class="w-full h-full object-cover max-w-full" alt="" loading="lazy">
+      <h1 class="content  text-[20px] text-white">Vancouver</h1>
+    </div>
+    <div class="img-holder relative">
+      <img src="/imgs/3.jpg" decoding="async" class="w-full h-full object-cover max-w-full" alt="" loading="lazy">
+      <h1 class="content  text-[20px] text-white">vicoria</h1>
+    </div>
+    <div class="img-holder relative">
+      <img src="/imgs/4.jpg" decoding="async" class="w-full h-full object-cover max-w-full" alt="" loading="lazy">
+      <h1 class="content  text-[20px] text-white">Calgary</h1>
+    </div>
+    <div class="img-holder relative">
+      <img src="/imgs/5.jpg" decoding="async" class="w-full h-full object-cover max-w-full" alt="" loading="lazy">
+      <h1 class="content  text-[20px] text-white">whistler</h1>
+    </div>
+  </div>
+  <!-- End travels  -->
+  <!-- Start why-camper -->
+  <div class="why-camper py-[10px] text-center text-white  ">
+    <div class="container w-[80%] mx-auto ">
+      <div class="main-title  ">
+        <h1 class="mb-4 text-[50px] uppercase">why camper?</h1>
+        <p class="text-[#777]">WE THOROUGHLY TAKE CARE OF EACH OF OUR CLIENTS AND THEIR COMFORT DURING EACH TRIP. OUR COMPANY IS A PARTNER OF MORE THAN A THOUSAND HOTELS ACROSS THE COUNTRY, MOREOVER OUR CUSTOMERS WILL BE PROVIDED WITH SPECIAL FAVORABLE CONDITIONS.</p>
+      </div>
+      <div class="row grid lg:grid-cols-3 gap-10  py-[70px]">
+        <div class="card-holder">
+          <i class="fa-solid fa-users text-[100px] "></i>
+          <p class="my-3 text-[40px] font-bold">10k+</p>
+          <h3 class="capitalize font-bold text-xl mb-4">happy Customers</h3>
+          <p class="text-[#777]">WE HAVE OVER 10,000 HAPPY CUSTOMERS WHO HAVE ALREADY USED THE SERVICES OF CAMPER</p>
+        </div>
+        <div class="card-holder">
+          <i class="fa-solid fa-caravan text-[100px]"></i>
+          <p class="my-3 text-[40px] font-bold">247</p>
+          <h3 class="capitalize font-bold text-xl mb-4">comfortable vans</h3>
+          <p class="text-[#777]">OUR VANS ARE EQUIPPED WITH ALL THE NECESSARY AMENITIES FOR A COMFORTABLE JOURNEY</p>
+        </div>
+        <div class="card-holder">
+          <i class="fa-solid fa-map-location-dot text-[100px] "></i>
+          <p class="my-3 text-[40px] font-bold">3680</p>
+          <h3 class="capitalize font-bold text-xl mb-4">completed tours</h3>
+          <p class="text-[#777]">WE HAVE ALREADY ORGANIZED 3860 TOURS IN CANADA BIG CITIES AND MORE THAN 450 LANDMARKS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End why-camper -->
+  <!-- Start balon section  -->
+  <div class="balon py-[200px] text-white relative flex justify-center items-center text-center">
+    <div class="container ">
+        <h1 class="text-2xl capitalize mb-4">the camper has other tours as well </h1>
+        <p class="mb-4">WE HAVE MORE THAN 2000 INTERESTING TOURS IN CANADA AND THE USA.</p>
+        <button class="px-[50px] py-[10px] bg-[#ffe8] text-white  hover:bg-gray-700 cursor-pointer transition capitalize">
+          see the tours
+        </button>
+      </div>
+    </div>
+  <!-- End balon section  --> 
+  <!-- Start footer  -->
+  <footer class="bg-gray-900 text-white py-[50px] text-center lg:text-start md:text-start">
+    <div class="w-[80%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Stay Informed Section -->
+      <div>
+        <h3 class="uppercase text-sm tracking-wider mb-4">Stay Informed</h3>
+        <div class="flex items-center border-b border-gray-500">
+          <input type="email" placeholder="my email" class="bg-transparent text-white placeholder-gray-400 focus:outline-none py-2 w-full">
+        </div>
+      </div>
+
+      <!-- Information Section -->
+      <div>
+        <h3 class="uppercase text-sm tracking-wider mb-4">Information</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="hover:underline">About</a></li>
+          <li><a href="#" class="hover:underline">Hotels</a></li>
+          <li><a href="#" class="hover:underline">Price</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Section -->
+      <div>
+        <h3 class="uppercase text-sm tracking-wider mb-4">Contact</h3>
+        <p>+14 307-1555</p>
+        <p class="mt-2">camperca@gmail.com</p>
+      </div>
+
+      <!-- Logo Section -->
+      <div class="flex items-center justify-center md:justify-end">
+        <h2 class="text-2xl font-bold">CAMPER</h2>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="w-[80%] mx-auto mt-8 pt-4 border-t border-gray-700 text-center text-sm text-gray-400">
+      <p>&copy; 2025 Mahmoud_Fawzy. All rights reserved</p>
+    </div>
+  </footer>
+  <!-- End footer  -->
+
+
+
+
+  <!-- Tailwind css link  -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font Awsome -->
+  <script src="/js/all.min.js"></script>
+  <!-- for nav bar  -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
